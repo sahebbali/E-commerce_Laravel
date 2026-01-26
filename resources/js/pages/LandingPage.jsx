@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import {
     ArrowRight,
     Check,
@@ -49,9 +50,12 @@ const Navigation = () => {
                     </div>
 
                     <div className="hidden items-center space-x-4 md:flex">
-                        <button className="text-gray-700 hover:text-gray-900">
+                        <Link
+                            href="/login"
+                            className="cursor-pointer text-gray-700 hover:text-gray-900"
+                        >
                             <User size={20} />
-                        </button>
+                        </Link>
                         <button className="relative text-gray-700 hover:text-gray-900">
                             <ShoppingCart size={20} />
                             <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
