@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import {
     ArrowRight,
     Heart,
@@ -88,12 +89,12 @@ const CartPage = () => {
             <div className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
                 <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-3">
+                        <Link href="/" className="flex items-center space-x-3">
                             <ShoppingBag className="h-8 w-8 text-indigo-600" />
                             <h1 className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-bold text-transparent">
                                 Shopping Cart
                             </h1>
-                        </div>
+                        </Link>
                         <span className="text-sm font-medium text-slate-600">
                             {cartItems.length}{' '}
                             {cartItems.length === 1 ? 'item' : 'items'}
@@ -162,7 +163,7 @@ const CartPage = () => {
                                                         onClick={() =>
                                                             removeItem(item.id)
                                                         }
-                                                        className="rounded-lg p-2 text-slate-400 transition-all duration-200 hover:bg-rose-50 hover:text-rose-500"
+                                                        className="cursor-pointer rounded-lg p-2 text-slate-400 transition-all duration-200 hover:bg-rose-50 hover:text-rose-500"
                                                     >
                                                         <Trash2 className="h-5 w-5" />
                                                     </button>
@@ -179,7 +180,7 @@ const CartPage = () => {
                                                                         1,
                                                                 )
                                                             }
-                                                            className="rounded-lg p-2 transition-all duration-200 hover:bg-white disabled:opacity-50"
+                                                            className="cursor-pointer rounded-lg p-2 transition-all duration-200 hover:bg-white disabled:opacity-50"
                                                             disabled={
                                                                 item.quantity <=
                                                                 1
@@ -198,7 +199,7 @@ const CartPage = () => {
                                                                         1,
                                                                 )
                                                             }
-                                                            className="rounded-lg p-2 transition-all duration-200 hover:bg-white"
+                                                            className="cursor-pointer rounded-lg p-2 transition-all duration-200 hover:bg-white"
                                                         >
                                                             <Plus className="h-4 w-4 text-slate-600" />
                                                         </button>
@@ -255,7 +256,7 @@ const CartPage = () => {
                                     </div>
                                     <button
                                         onClick={applyPromoCode}
-                                        className="rounded-xl bg-slate-900 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-slate-800"
+                                        className="cursor-pointer rounded-xl bg-slate-900 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-slate-800"
                                     >
                                         Apply
                                     </button>
@@ -331,13 +332,14 @@ const CartPage = () => {
                             )}
 
                             {/* Checkout Button */}
-                            <button
+                            <Link
+                                href="/checkout"
                                 disabled={cartItems.length === 0}
-                                className="flex w-full transform items-center justify-center space-x-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-indigo-700 hover:to-purple-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
+                                className="flex w-full transform cursor-pointer items-center justify-center space-x-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-indigo-700 hover:to-purple-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
                             >
                                 <span>Proceed to Checkout</span>
                                 <ArrowRight className="h-5 w-5" />
-                            </button>
+                            </Link>
 
                             {/* Security Badge */}
                             <div className="mt-6 flex items-center justify-center space-x-2 text-sm text-slate-500">
