@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import {
     ArrowLeft,
     Building,
@@ -696,9 +697,12 @@ const CheckoutPage = () => {
                                     >
                                         Back
                                     </button>
-                                    <button className="flex-1 transform cursor-pointer rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-700 hover:to-teal-700">
+                                    <Link
+                                        href="/order"
+                                        className="flex-1 transform cursor-pointer justify-center rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 py-4 text-center text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-700 hover:to-teal-700"
+                                    >
                                         Place Order
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         )}

@@ -13,6 +13,9 @@ Route::get('/cart', function () {
 Route::get('/checkout', function () {
     return Inertia::render('CheckoutPage');
 });
+Route::get('/order', function () {
+    return Inertia::render('OrderPage');
+});
 Route::get('/login', function () {
     return Inertia::render('auth/Login', [
         'canResetPassword' => Route::has('password.request'),
