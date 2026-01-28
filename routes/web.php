@@ -7,6 +7,9 @@ use Laravel\Fortify\Features;
 Route::get('/', function () {
     return Inertia::render('LandingPage');
 });
+Route::get('/cart', function () {
+    return Inertia::render('CartPage');
+});
 Route::get('/login', function () {
     return Inertia::render('auth/Login', [
         'canResetPassword' => Route::has('password.request'),

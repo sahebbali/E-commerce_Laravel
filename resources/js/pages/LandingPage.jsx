@@ -56,12 +56,15 @@ const Navigation = () => {
                         >
                             <User size={20} />
                         </Link>
-                        <button className="relative text-gray-700 hover:text-gray-900">
+                        <Link
+                            href="/cart"
+                            className="relative text-gray-700 hover:text-gray-900"
+                        >
                             <ShoppingCart size={20} />
                             <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
                                 3
                             </span>
-                        </button>
+                        </Link>
                     </div>
 
                     <button
