@@ -460,7 +460,7 @@ const CheckoutPage = () => {
 
                                 <button
                                     onClick={() => setCurrentStep(2)}
-                                    className="mt-8 w-full transform rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-violet-700 hover:to-fuchsia-700"
+                                    className="mt-8 w-full transform cursor-pointer rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-violet-700 hover:to-fuchsia-700"
                                 >
                                     Continue to Payment
                                 </button>
@@ -578,13 +578,13 @@ const CheckoutPage = () => {
                                 <div className="mt-8 flex gap-4">
                                     <button
                                         onClick={() => setCurrentStep(1)}
-                                        className="flex-1 rounded-xl border-2 border-slate-300 py-4 text-lg font-bold text-slate-700 transition-all duration-200 hover:bg-slate-50"
+                                        className="flex-1 cursor-pointer rounded-xl border-2 border-slate-300 py-4 text-lg font-bold text-slate-700 transition-all duration-200 hover:bg-slate-50"
                                     >
                                         Back
                                     </button>
                                     <button
                                         onClick={() => setCurrentStep(3)}
-                                        className="flex-1 transform rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-violet-700 hover:to-fuchsia-700"
+                                        className="flex-1 transform cursor-pointer rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-violet-700 hover:to-fuchsia-700"
                                     >
                                         Review Order
                                     </button>
@@ -608,7 +608,7 @@ const CheckoutPage = () => {
                                         </h3>
                                         <button
                                             onClick={() => setCurrentStep(1)}
-                                            className="text-sm font-semibold text-violet-600 hover:text-violet-700"
+                                            className="cursor-pointer text-sm font-semibold text-violet-600 hover:text-violet-700"
                                         >
                                             Edit
                                         </button>
@@ -639,7 +639,7 @@ const CheckoutPage = () => {
                                         </h3>
                                         <button
                                             onClick={() => setCurrentStep(2)}
-                                            className="text-sm font-semibold text-violet-600 hover:text-violet-700"
+                                            className="cursor-pointer text-sm font-semibold text-violet-600 hover:text-violet-700"
                                         >
                                             Edit
                                         </button>
@@ -692,11 +692,11 @@ const CheckoutPage = () => {
                                 <div className="flex gap-4">
                                     <button
                                         onClick={() => setCurrentStep(2)}
-                                        className="flex-1 rounded-xl border-2 border-slate-300 py-4 text-lg font-bold text-slate-700 transition-all duration-200 hover:bg-slate-50"
+                                        className="flex-1 cursor-pointer rounded-xl border-2 border-slate-300 py-4 text-lg font-bold text-slate-700 transition-all duration-200 hover:bg-slate-50"
                                     >
                                         Back
                                     </button>
-                                    <button className="flex-1 transform rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-700 hover:to-teal-700">
+                                    <button className="flex-1 transform cursor-pointer rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-700 hover:to-teal-700">
                                         Place Order
                                     </button>
                                 </div>
